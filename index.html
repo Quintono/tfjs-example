@@ -1,0 +1,29 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Load TensorFlow.js. This is required to use MobileNet. -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
+  <!-- Load the MobileNet model. -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script>
+  <title>Snap it</title>
+</head>
+
+<body>
+  <main>
+    <h4>Tiny TFJS example
+      <hr />
+    </h4>
+    <section class="content">
+      <p>Can you show me a: <span id="item-to-find"></span></p>
+      <video></video>
+      <button class="capture-image">SNAP</button>
+      <p id="prediction"></p>
+    </section>
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

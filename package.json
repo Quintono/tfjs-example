@@ -1,0 +1,21 @@
+{
+  "name": "tfjs-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npm run build && node_modules/http-server/bin/http-server dist -p 1234 ",
+    "build": "mkdir -p dist/ && cp index.html dist/ && cp index.js dist/"
+  },
+  "devDependencies": {
+    "clang-format": "^1.8.0",
+    "http-server": "^14.1.1",
+    "parcel": "^2.10.3"
+  },
+  "resolutions": {
+    "follow-redirects": "1.14.8"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
