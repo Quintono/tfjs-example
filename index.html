@@ -5,26 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Load TensorFlow.js. This is required to use MobileNet. -->
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
-  <!-- Load the MobileNet model. -->
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script>
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
-  <title>Snap it</title>
+  <title>Sentiment Analysis</title>
 </head>
 
 <body>
   <main>
     <section class="content">
-    <video class="webcam"></video>
-    <section class="buttons">
-      <button>Up</button>
-      <button>Down</button>
-      <button>Left</button>
-      <button>Right</button>
-    </section>
-    <section class="buttons">
-      <button class="predict">Predict</button>
-    </section>
-    <p class="prediction"></p>
+      <label for="text">Text</label>
+      <input type="text" name="text" />
+      <button>Predict</button>
     </section>
   </main>
 
